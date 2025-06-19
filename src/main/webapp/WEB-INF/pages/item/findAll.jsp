@@ -36,7 +36,8 @@
                <td>
                    <c:if test="${not empty item.pathImg}">
                        <a href="${pageContext.request.contextPath}/images/${item.pathImg}" target="_blank" rel="noopener noreferrer">
-                           <img src="${pageContext.request.contextPath}/images/${item.pathImg}" alt="${item.name}" style="max-height: 60px;">
+                           <img src="${pageContext.request.contextPath}/images/${item.pathImg}.jpg" alt="${item.name}" style="max-height: 60px;">
+
                        </a>
                    </c:if>
                </td>
@@ -64,7 +65,7 @@
     <a href="${pageContext.request.contextPath}/mvcItems/create" class="btn btn-success mt-3">+ Ajouter un item</a>
 </div>
 
-<jsp:include page="/WEB-INF/pages/common/footer.jsp" />
+
 
 </body>
 </html>

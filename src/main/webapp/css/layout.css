@@ -119,3 +119,21 @@ thStat {
     border-color: #7a5000;
     color: white;
 }
+
+
+.btn-primary-custom {
+    background-color: #5c3a00;
+    border-color: #5c3a00;
+    color: white;
+}
+
+.btn-cancel {
+  background-color: #ccc;      /* gris clair */
+  color: #333;                 /* texte sombre */
+  border: 1px solid #999;      /* contour gris moyen */
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}

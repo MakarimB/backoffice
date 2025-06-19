@@ -16,6 +16,16 @@
             <label for="firstname" class="form-label">Prénom</label>
             <input type="text" class="form-control" id="firstname" name="firstname" value="${sessionScope.user.firstname}" required />
         </div>
+
+        <c:if test="${not empty error}">
+                <div class="alert alert-danger">${error}</div>
+            </c:if>
+
+            <c:if test="${not empty success}">
+                <div class="alert alert-success">${success}</div>
+            </c:if>
+
+
         <div class="mb-3">
             <label for="lastname" class="form-label">Nom</label>
             <input type="text" class="form-control" id="lastname" name="lastname" value="${sessionScope.user.lastname}" required />
@@ -35,8 +45,8 @@
             <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required />
         </div>
 
-        <button type="submit" class="btn btn-primary w-100">Mettre à jour</button>
-        <a href="${pageContext.request.contextPath}/home" class="btn btn-primary w-100">Annuler</a>
+        <button type="submit" class="btn btn-primary-custom">Mettre à jour</button>
+        <a href="${pageContext.request.contextPath}/home" class="btn btn-cancel">Annuler</a>
     </form>
 </div>
 
